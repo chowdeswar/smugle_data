@@ -1,0 +1,19 @@
+<h2 class="text-center">Contacts</h2>
+
+<!-- main api data here. -->
+<div class="container">
+    <div class="apidata row">
+        <div *ngFor="let contact of data.contacts" class="col-md-3">
+            <div class="contact-details">
+                <p>{{ contact.name }}</p>
+                <p>{{ contact.email }}</p>
+                <p>{{ contact.company }}</p>
+                <p>{{ contact.role }}</p>
+                <p>{{ contact.twitter }}</p>
+                <p><img src="{{ contact.image }}" width="100" height="100"></p>
+                <p>{{ contact.info }}</p>
+                <p>{{ contact.location }}</p>
+            </div>
+        </div>
+    </div>
+</div>
